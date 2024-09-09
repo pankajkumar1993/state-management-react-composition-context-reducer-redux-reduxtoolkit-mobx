@@ -1,0 +1,84 @@
+/* src/global.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global Body Styles */
+body {
+    @apply bg-gray-100 text-gray-800 font-sans;
+}
+
+/* Heading Styles */
+h1 {
+    @apply text-3xl font-bold text-center text-primary mb-6;
+}
+
+/* Form Styles */
+form {
+    @apply bg-white p-6 rounded shadow space-y-4 mb-6;
+}
+
+/* Input and Select Styles */
+input,
+select {
+    @apply border border-gray-300 p-2 rounded w-full focus:outline-none focus:ring-2 focus:ring-primary;
+}
+
+/* Button Styles */
+button {
+    @apply bg-primary text-white py-2 px-4 rounded cursor-pointer w-full;
+}
+
+button:hover {
+    @apply bg-green-500;
+}
+
+/* User List Styles */
+.user-list-container {
+    @apply space-y-2;
+}
+
+.user-list-item {
+    @apply bg-white p-4 rounded shadow flex justify-between items-center;
+}
+
+.user-info {
+    @apply flex flex-col md:flex-row md:items-center space-y-1 md:space-y-0 md:space-x-4;
+}
+
+.user-name {
+    @apply font-bold;
+}
+
+.user-status {
+    @apply font-bold;
+}
+
+.user-status-active {
+    @apply text-green-500;
+}
+
+.user-status-inactive {
+    @apply text-red-500;
+}
+
+/* Action Buttons */
+.action-button {
+    @apply text-sm text-white py-1 px-2 rounded cursor-pointer;
+}
+
+.action-button-edit {
+    @apply bg-blue-500 hover:bg-blue-600;
+}
+
+.action-button-delete {
+    @apply bg-red-500 hover:bg-red-600;
+}
+
+
+
+
+.card {
+    @apply p-5 bg-white rounded-md shadow hover:shadow-sm cursor-pointer flex flex-col gap-4;
+}
+
